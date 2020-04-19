@@ -1,0 +1,56 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/grant.dempsey.1/Enigma/lib/enigma.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1587264283
+  }
+}
