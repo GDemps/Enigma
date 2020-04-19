@@ -46,4 +46,11 @@ class Enigma
     { encryption: encrypted_word, key: key, date: date}
   end
 
+  def decrypt(ciphertext,
+    key = 4.times.map { (0..9).to_a.sample } .join.rjust(5, "0"),
+    date = Time.now.strftime("%d%m%y"))
+    require "pry"
+    binding.pry
+  end
+
 end
