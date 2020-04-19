@@ -9,10 +9,18 @@ class Enigma
   def encrypt(message, key = 4.times.map { (0..9).to_a.sample }
     .join.rjust(5, "0"), date = Time.now.strftime("%d%m%y"))
     message = message.downcase
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4e0bbe2511864a35a6906339d139055c6646c651
     a_key = key[0..1]
     b_key = key[1..2]
     c_key = key[2..3]
     d_key = key[3..4]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4e0bbe2511864a35a6906339d139055c6646c651
     last4 = (date.to_i * date.to_i).to_s[-4..-1]
     a_offset = last4[0]
     b_offset = last4[1]
@@ -44,4 +52,14 @@ class Enigma
     { encryption: encrypted_word, key: key, date: date}
   end
 
+<<<<<<< HEAD
+=======
+  def decrypt(ciphertext,
+    key = 4.times.map { (0..9).to_a.sample } .join.rjust(5, "0"),
+    date = Time.now.strftime("%d%m%y"))
+    # require "pry"
+    # binding.pry
+  end
+
+>>>>>>> 4e0bbe2511864a35a6906339d139055c6646c651
 end
