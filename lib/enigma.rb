@@ -40,7 +40,6 @@ class Enigma
     end
     encrypted_word = encrypted_word.join
     { encryption: encrypted_word, key: key, date: date}
-    #need to access via encrypted[:encryption]
   end
 
   def decrypt(ciphertext,
