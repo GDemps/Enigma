@@ -28,14 +28,14 @@ class EnigmaTest < Minitest::Test
   def test_encrypt_without_date
     enigma = Enigma.new
     encrypted = enigma.encrypt("hello world", "02715")
-    assert_equal encrypted, enigma.encrypt("hello world", "02715", "190420")
+    assert_equal encrypted, enigma.encrypt("hello world", "02715", "210420")
   end
 
   def test_decrypt
     enigma = Enigma.new
     encrypted = enigma.encrypt("hello world", "02715")
     assert_equal enigma.decrypt(encrypted[:encryption], "02715"),
-                { decryption: "hello world", key: "02715", date: "190420" }
+                { decryption: "hello world", key: "02715", date: "210420" }
   end
 
 end
